@@ -1,0 +1,41 @@
+Calculating the Correlation Between Population Statistics and Local Amenities
+Version 1.1 (7/25/2022) by Nicholas Dante Lucchetto
+
+(Tailored to the Live Music Mapping project, to accompany 3VarCorrel.xlsx.)
+
+=====================================
+
+Starting Variables and Letter Labels:
+(P) "EstPop" - Estimated employed population within each county (25 counties total, inc'l DC and Baltimore City)
+(R) "Artist" - Full-time artists as percent of employed population within each county
+(V) "Venues" - Number of mapped venues per county
+(I) "MedInc" - Median income within each county
+
+=====================================
+
+Formulas utilizing these variables:
+(X̄ = average of X variables [X as a placeholder for the referenced variable])
+
+"rPopArtist" - Calculates the association (r-value/correlation coefficient) between EstPop and Artist
+Correl(P,R) = [Σ(P-P̄)(R-R̄)]/√([(Σ(P-P̄)^2)(Σ(R-R̄)^2)])
+Excel Function: =CORREL(P2:P26,R2:R26)
+
+"rPopVenues" - Calculates the association between EstPop and Venues
+Correl(P,V) = [Σ(P-P̄)(V-V̄)]/√([(Σ(P-P̄)^2)(Σ(V-V̄)^2)])
+Excel Function: =CORREL(P2:P26,V2:V26)
+
+"rArtistVenues" - Calculates the association between Artist and Venues"
+Correl(R,V) = [Σ(R-R̄)(V-V̄)]/√([(Σ(R-R̄)^2)(Σ(V-V̄)^2)])
+Excel Function: =CORREL(R2:R26,V2:V26)
+
+"rIncVenues" - Calculates the association between MedInc and Venues
+Correl(I,V) = [Σ(I-Ī)(V-V̄)]/√([(Σ(I-Ī)^2)(Σ(V-V̄)^2)])
+Excel Function: =CORREL(I2:I26,V2:V26)
+
+"rIncArtist" - Calculates the association between MedInc and Artist
+Correl(I,R) = [Σ(I-Ī)(R-R̄)]/√([(Σ(I-Ī)^2)(Σ(R-R̄)^2)])
+Excel Function: =CORREL(I2:I26,R2:R26)
+
+
+An r value of +1.0 signifies perfcet positive association between two variables, while an r value of 0.0 signifies no apparent association.
+These formulas provide a powerful base for observing variables. STILL, it is responsible and crucial to avoid implying causation between two variables if the r value is your only evidence of association.
