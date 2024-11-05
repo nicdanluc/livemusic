@@ -10,8 +10,8 @@ This project attempts to understand the career prospects of field through the **
 
 This spatial analysis of the relationship between venue location and artist population spread aims to visualize the convenience of accessing D.C. and Maryland's music venues to the professional artists who depend on them for income and inspiration.
 
-____The District of Columbia and the State of Maryland were established as the two sample research areas mainly out of my interest in how two metro areas in close proximity to each other (Washington, D.C., and Baltimore) may compare statistically (alongside my personal curiosity about the east coast live music scene.)
-________e
+The District of Columbia and the State of Maryland were established as the two sample research areas mainly out of my interest in how two metro areas in close proximity to each other (Washington, D.C., and Baltimore) may compare statistically (alongside my personal curiosity about the east coast live music scene.)
+
 
 #### Major Contributors
 
